@@ -3,26 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet-Burgue</title>
+    <title>CosmicBurger - Hamburgueria Interplanetária</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div>
-            <button>Mostrar tudo <br>ForEach</button>
-            <button>Mapear <br>Map</button>
-            <button>Somar tudo<br>Reduce</button>
-            <button>Filtrar <br>Filter</button>
-    </div>
-    <ul>
-        <li> 
-            <img src="./assets/bacon-egg.png" alt="X-Bacon Egg">
-            <p>X-Bacon Egg</p>
-            <p>R$ 29,97</p>
-        </li>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-meteor"></i>
+                    <h1>CosmicBurger</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Cardápio</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Delivery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Hambúrgueres <span>Intergalácticos</span> para Exploradores Modernos</h2>
+                    <p>Experimente nossos hambúrgueres cósmicos feitos com ingredientes de outro mundo. Uma explosão de sabores que vai te levar às estrelas!</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary"><i class="fas fa-robot"></i> Fazer Pedido</button>
+                        <button class="btn btn-secondary"><i class="fas fa-scroll"></i> Ver Cardápio</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://cdn.pixabay.com/photo/2023/07/12/15/21/ai-generated-8123150_1280.png" alt="Hambúrguer Espacial">
+                </div>
+            </div>
+        </section>
 
+        <section class="menu-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Cardápio Planetário</h2>
+                </div>
+                
+                <div class="container-buttons">
+                    <button><i class="fas fa-globe"></i> Mostrar tudo <br>ForEach</button>
+                    <button><i class="fas fa-map"></i> Mapear <br>Map</button>
+                    <button><i class="fas fa-calculator"></i> Somar tudo<br>Reduce</button>
+                    <button><i class="fas fa-filter"></i> Filtrar <br>Filter</button>
+                </div>
+                
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://cdn.pixabay.com/photo/2023/07/12/15/21/ai-generated-8123150_1280.png" alt="X-Bacon Egg">
+                        <div class="item-info">
+                            <h3>X-Bacon Egg</h3>
+                            <p>Hambúrguer artesanal, bacon crocante, ovo, queijo cheddar e molho especial.</p>
+                            <p class="item-price">R$ 29,97 <button class="add-to-cart" title="Adicionar ao carrinho"><i class="fas fa-plus"></i></button></p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://cdn.pixabay.com/photo/2023/11/11/15/06/ai-generated-8381500_1280.png" alt="Saturno Burger">
+                        <div class="item-info">
+                            <h3>Saturno Burger</h3>
+                            <p>Blend de carne, anéis de cebola empanados, queijo prato e molho barbecue.</p>
+                            <p class="item-price">R$ 32,90 <button class="add-to-cart" title="Adicionar ao carrinho"><i class="fas fa-plus"></i></button></p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://cdn.pixabay.com/photo/2023/09/27/15/41/ai-generated-8279318_1280.png" alt="Meteoro Picante">
+                        <div class="item-info">
+                            <h3>Meteoro Picante</h3>
+                            <p>Carne apimentada, pepperoni, jalapeños, queijo pepper jack e molho de pimenta.</p>
+                            <p class="item-price">R$ 34,50 <button class="add-to-cart" title="Adicionar ao carrinho"><i class="fas fa-plus"></i></button></p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://cdn.pixabay.com/photo/2023/10/12/15/21/ai-generated-8311029_1280.png" alt="Galáxia Vegana">
+                        <div class="item-info">
+                            <h3>Galáxia Vegana</h3>
+                            <p>Hambúrguer de grão-de-bico, abobrinha grelhada, tomate seco e maionese de ervas.</p>
+                            <p class="item-price">R$ 27,80 <button class="add-to-cart" title="Adicionar ao carrinho"><i class="fas fa-plus"></i></button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </ul>
-    
-    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CosmicBurger</h3>
+                    <p>Leve seu paladar a uma jornada intergaláctica com nossos hambúrgueres cósmicos.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Segunda a Quinta: 18h - 23h</p>
+                    <p>Sexta e Sábado: 18h - 00h</p>
+                    <p>Domingo: 18h - 22h</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua das Galáxias, 123</p>
+                    <p><i class="fas fa-phone"></i> (47) 9999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@cosmicburguer.com</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 CosmicBurger - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
